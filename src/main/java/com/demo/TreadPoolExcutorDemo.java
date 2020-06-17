@@ -11,6 +11,8 @@ public class TreadPoolExcutorDemo {
         );
 
 
+        Executors.newFixedThreadPool(2);
+
         Callable<String> callable = new Callable<String>() {
             @Override
             public String call() throws Exception {

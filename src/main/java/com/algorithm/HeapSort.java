@@ -24,8 +24,8 @@ public class HeapSort {
         while (count>1){
 
             int temp = arr[count-1];//交换堆顶与未排序数组的最后一位
-            arr[count-1]=arr[0];
-            arr[0]=temp;
+            arr[count-1] = arr[0];
+            arr[0] = temp;
 
             count--;//完成一次排序，将最大的数排到数组最后，未排序的数量减一
             adjustHeap(arr,count,0);//调整过程自上而下，参数root=0
@@ -38,10 +38,10 @@ public class HeapSort {
 
         int maxChildIndex;
 
-        while (root<=count/2-1){//待调整子堆的根节点必须是非叶子节点
+        while (root <= count / 2 - 1){//待调整子堆的根节点必须是非叶子节点
 
-            if (root==count/2-1&&count%2==0){//如果当前根节点是最后一个非叶子节点，并且它没有右子节点（节点数未偶数）
-                maxChildIndex=root*2+1;
+            if (root == count / 2 - 1 && count % 2 == 0){//如果当前根节点是最后一个非叶子节点，并且它没有右子节点（节点数为偶数）
+                maxChildIndex = root * 2 + 1;
             }else {
                int leftChildIndex=root*2+1;
                int rightChildIndex=root*2+2;
