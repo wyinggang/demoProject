@@ -21,17 +21,22 @@ public class ExcelController {
 
     @Autowired private UserMapper userMapper;
 
+//      EasyExcel.read(fileName, DemoData .class, new DemoDataListener()).sheet()
+//    // 这里可以设置1，因为头就是一行。如果多行头，可以设置其他值。不传入默认1行
+//        .headRowNumber(1).doRead();
+
+
     @PostMapping("readExcel")
     public void readExcel(@RequestParam("file") MultipartFile file) {
         ModelExcelListener<User> modelExcelListener = new ModelExcelListener<>();
         ExcelReader excelReader = null;
         try {
             excelReader = EasyExcel.read(file.getInputStream(), User.class, modelExcelListener).build();
-            ReadSheet readSheet = EasyExcel.readSheet(0).build();
+            ReadSheet readSheet = EasyExcel.readSheet(0).headRowNumber(1).build();
             excelReader.read(readSheet);
             //TODO 业务
             System.out.println(modelExcelListener.getDataList());
-            System.out.println(modelExcelListener.getErrorList());
+            System.err.println(modelExcelListener.getErrorList());
             for (User user : modelExcelListener.getDataList()) {
                 userMapper.insert(user);
             }

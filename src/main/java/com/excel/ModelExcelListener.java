@@ -84,7 +84,7 @@ public class ModelExcelListener<E> extends AnalysisEventListener<E> {
 
 
     //验证valid,将错误信息放入errorList
-    public boolean valid(E object,  Map<String, ExcelCellBo> propertyNameMap){
+    private boolean valid(E object,  Map<String, ExcelCellBo> propertyNameMap){
         boolean validateResult = true;
         Set<ConstraintViolation<E>> validateSet = Validation.buildDefaultValidatorFactory().getValidator().validate(object, Default.class);
         if (validateSet != null && !validateSet.isEmpty()) {
@@ -113,7 +113,7 @@ public class ModelExcelListener<E> extends AnalysisEventListener<E> {
 
 
     //获取字段名与其对应行列
-    Map<String, ExcelCellBo> getPropertyNameMap(boolean isSingleHeader, AnalysisContext analysisContext){
+   private Map<String, ExcelCellBo> getPropertyNameMap(boolean isSingleHeader, AnalysisContext analysisContext){
         Map<String, ExcelCellBo> propertyNameMap = new HashMap<>(16);
         ReadRowHolder readRowHolder = analysisContext.readRowHolder();
         Integer rowIndex = readRowHolder.getRowIndex();
