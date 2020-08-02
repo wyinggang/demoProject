@@ -1,0 +1,46 @@
+Manifest-Version: 1.0
+Main-Class: com.IsSpringBootApplication
+Class-Path: lettuce-core-5.0.3.RELEASE.jar easyexcel-2.2.3.jar commons-f
+ ileupload-1.2.1.jar spring-boot-starter-data-redis-2.0.1.RELEASE.jar sp
+ ring-boot-starter-jdbc-2.0.1.RELEASE.jar simpleclient_common-0.3.0.jar 
+ validation-api-2.0.1.Final.jar spring-webmvc-5.0.5.RELEASE.jar spring-b
+ eans-5.0.5.RELEASE.jar spring-context-5.0.5.RELEASE.jar jackson-databin
+ d-2.9.5.jar jackson-datatype-jdk8-2.9.5.jar tomcat-embed-websocket-8.5.
+ 29.jar mybatis-plus-annotation-3.1.0.jar poi-3.17.jar spring-boot-actua
+ tor-2.0.1.RELEASE.jar netty-codec-dns-4.1.23.Final.jar lombok-1.16.20.j
+ ar druid-1.1.10.jar jodd-bean-3.7.1.jar spring-boot-starter-json-2.0.1.
+ RELEASE.jar mybatis-plus-extension-3.1.0.jar spring-boot-2.0.1.RELEASE.
+ jar tomcat-embed-core-8.5.29.jar spring-boot-starter-web-2.0.1.RELEASE.
+ jar jsqlparser-1.4.jar reactive-streams-1.0.2.jar netty-common-4.1.23.F
+ inal.jar mybatis-plus-3.1.0.jar mybatis-spring-2.0.0.jar eventbus-3.1.1
+ .jar curvesapi-1.04.jar spring-aop-5.0.5.RELEASE.jar druid-spring-boot-
+ starter-1.1.10.jar ehcache-3.5.2.jar commons-pool2-2.5.0.jar spring-dat
+ a-commons-2.0.6.RELEASE.jar micrometer-core-1.0.3.jar logback-classic-1
+ .2.3.jar spring-boot-starter-logging-2.0.1.RELEASE.jar jul-to-slf4j-1.7
+ .25.jar spring-oxm-5.0.5.RELEASE.jar jboss-logging-3.3.2.Final.jar mysq
+ l-connector-java-5.1.37.jar spring-data-keyvalue-2.0.6.RELEASE.jar log4
+ j-api-2.10.0.jar stax-api-1.0.1.jar spring-jdbc-5.0.5.RELEASE.jar cglib
+ -3.3.0.jar netty-handler-4.1.23.Final.jar poi-ooxml-schemas-3.17.jar lo
+ gback-core-1.2.3.jar spring-web-5.0.5.RELEASE.jar commons-io-1.3.2.jar 
+ byte-buddy-1.7.11.jar classmate-1.3.4.jar spring-core-5.0.5.RELEASE.jar
+  spring-jcl-5.0.5.RELEASE.jar jodd-core-3.7.1.jar jackson-datatype-jsr3
+ 10-2.9.5.jar commons-codec-1.11.jar spring-context-support-5.0.5.RELEAS
+ E.jar LatencyUtils-2.0.3.jar jedis-2.9.0.jar netty-codec-4.1.23.Final.j
+ ar HikariCP-2.7.8.jar cache-api-1.1.0.jar commons-httpclient-3.1.jar as
+ m-7.1.jar snakeyaml-1.19.jar tomcat-embed-el-8.5.29.jar jackson-datafor
+ mat-yaml-2.9.5.jar netty-resolver-4.1.23.Final.jar netty-transport-4.1.
+ 23.Final.jar spring-boot-autoconfigure-2.0.1.RELEASE.jar poi-ooxml-3.17
+ .jar commons-logging-1.0.4.jar jackson-module-parameter-names-2.9.5.jar
+  javax.annotation-api-1.3.2.jar mybatis-plus-core-3.1.0.jar jackson-ann
+ otations-2.9.0.jar redisson-3.8.2.jar spring-tx-5.0.5.RELEASE.jar micro
+ meter-registry-prometheus-1.0.3.jar simpleclient-0.3.0.jar log4j-to-slf
+ 4j-2.10.0.jar spring-boot-starter-actuator-2.0.1.RELEASE.jar fastjson-1
+ .2.70.jar spring-boot-actuator-autoconfigure-2.0.1.RELEASE.jar HdrHisto
+ gram-2.1.10.jar commons-collections4-4.1.jar mybatis-3.5.0.jar reactor-
+ core-3.1.6.RELEASE.jar xmlbeans-2.6.0.jar spring-boot-starter-tomcat-2.
+ 0.1.RELEASE.jar netty-buffer-4.1.23.Final.jar spring-data-redis-2.0.6.R
+ ELEASE.jar jackson-core-2.9.5.jar hibernate-validator-6.0.9.Final.jar m
+ ybatis-plus-boot-starter-3.1.0.jar slf4j-api-1.7.25.jar netty-resolver-
+ dns-4.1.23.Final.jar spring-expression-5.0.5.RELEASE.jar spring-boot-st
+ arter-2.0.1.RELEASE.jar
+

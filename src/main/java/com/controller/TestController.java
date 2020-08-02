@@ -1,5 +1,6 @@
 package com.controller;
 
+import com.aop.Monitoring;
 import com.redis.DistributedLock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
@@ -19,6 +20,7 @@ public class TestController {
     @Autowired  private  DistributedLock distributedLock;
 
 
+    @Monitoring(uri = "/test",method = "TsetMethod")
     @RequestMapping("/test/{value}")
     public String TsetMethod(@PathVariable("value")String value){
 
