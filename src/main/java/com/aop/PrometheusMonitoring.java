@@ -49,7 +49,7 @@ public class PrometheusMonitoring {
             tags.add(Tag.of("result",result.toString()));
             sample.stop(registry.timer("http_server_demoProject"+msig.getName(),tags));
         }
-        return null;
+        return result;
     }
 
 
